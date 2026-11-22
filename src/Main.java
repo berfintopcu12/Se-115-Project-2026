@@ -2,11 +2,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Expedition exp = new Expedition();
         boolean gaming = true;
         Scanner s = new Scanner(System.in);
         while (gaming == true) {
             System.out.println("1- New Game, 2-Quit");
-            String choose = s.nextLine();
+            String choose = s.nextLine().trim();
             if (choose.equals("1")) {
                 System.out.println("Welcome to the New Game");
             }
